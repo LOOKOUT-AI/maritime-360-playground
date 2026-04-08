@@ -22,3 +22,5 @@ depth_anything_v2/**/__pycache__/
 *.html
 *.json
 *.pyc
+
+!assets/examples/*.mp4

@@ -74,6 +74,15 @@ Project-specific local folders:
 - [maritime_input/README.md](maritime_input/README.md)
 - [maritime_output/README.md](maritime_output/README.md)
 
+## Example Media
+
+Representative local example assets are included directly in the repo:
+
+- still frame with the fitted fisheye outline and selected reference point: [assets/examples/boat_fisheye_circle_preview.jpg](assets/examples/boat_fisheye_circle_preview.jpg)
+- short scene pan clip: [assets/examples/example_scene_pan_trimmed.mp4](assets/examples/example_scene_pan_trimmed.mp4)
+
+The example video is a trimmed copy of a local capture with the first and last second removed.
+
 ## Publishing Notes
 
 This repository still points to the upstream remote:
