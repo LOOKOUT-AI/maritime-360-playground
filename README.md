@@ -82,6 +82,7 @@ Representative local example assets are included directly in the repo:
 
 - still frame with the fitted fisheye outline and selected reference point: [assets/examples/boat_fisheye_circle_preview.jpg](assets/examples/boat_fisheye_circle_preview.jpg)
 - short scene pan clip: [assets/examples/example_scene_pan_trimmed.mp4](assets/examples/example_scene_pan_trimmed.mp4)
+- short source clip used in the maritime masking workflow: [maritime_input/longer_mask_clip/scene_input_003s_033s.mp4](maritime_input/longer_mask_clip/scene_input_003s_033s.mp4)
 
 The example video is a trimmed copy of a local capture with the first and last second removed.
 

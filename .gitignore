@@ -7,6 +7,9 @@ checkpoints/*
 
 maritime_input/*
 !maritime_input/README.md
+!maritime_input/longer_mask_clip/
+maritime_input/longer_mask_clip/*
+!maritime_input/longer_mask_clip/scene_input_003s_033s.mp4
 
 maritime_output/*
 !maritime_output/README.md
@@ -24,3 +27,4 @@ depth_anything_v2/**/__pycache__/
 *.pyc
 
 !assets/examples/*.mp4
+!maritime_input/longer_mask_clip/scene_input_003s_033s.mp4

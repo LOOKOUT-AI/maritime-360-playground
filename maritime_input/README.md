@@ -10,3 +10,7 @@ Typical contents:
 - user-provided boat and water mask videos
 
 These files are intentionally ignored by git because they are large and project-specific.
+
+Current exception:
+
+- `longer_mask_clip/scene_input_003s_033s.mp4` is intentionally committed as a small reference input clip used in the exploratory examples and mask workflow.
