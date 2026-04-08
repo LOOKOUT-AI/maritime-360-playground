@@ -69,6 +69,8 @@ Added locally on top of upstream DA360:
 
 The custom entry points are documented in [scripts/README.md](scripts/README.md).
 
+That script guide also includes repo-relative commands for reproducing the two saved `VO + ICP` example scenes and reopening their `background_boat_view.html` viewers without any private absolute paths.
+
 Project-specific local folders:
 
 - [maritime_input/README.md](maritime_input/README.md)
