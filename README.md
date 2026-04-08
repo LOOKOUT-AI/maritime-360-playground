@@ -38,6 +38,15 @@ Pretrained models are available from the upstream project page and Google Drive 
 
 This workspace also contains a custom maritime adaptation for a downward-looking elliptical fisheye camera mounted above a boat.
 
+<p align="center">
+  <img src="assets/examples/boat_fisheye_circle_preview.jpg" width="48%" alt="Downward-looking fisheye frame with fitted ellipse and selected anchor point.">
+  <img src="assets/examples/example_scene_pan_frame.jpg" width="48%" alt="Browser view of the split background and boat point cloud scene.">
+</p>
+
+<p align="center">
+  Left: example fisheye input geometry. Right: example reconstructed scene view from the exploratory VO + ICP pipeline.
+</p>
+
 ## Exploratory Status
 
 This repository should be read as an exploratory playground, not as a serious reproduction effort, a validated benchmark, or a paper-quality investigation.
@@ -81,6 +90,7 @@ Project-specific local folders:
 Representative local example assets are included directly in the repo:
 
 - still frame with the fitted fisheye outline and selected reference point: [assets/examples/boat_fisheye_circle_preview.jpg](assets/examples/boat_fisheye_circle_preview.jpg)
+- screenshot from the example point-cloud pan clip: [assets/examples/example_scene_pan_frame.jpg](assets/examples/example_scene_pan_frame.jpg)
 - short scene pan clip: [assets/examples/example_scene_pan_trimmed.mp4](assets/examples/example_scene_pan_trimmed.mp4)
 - short source clip used in the maritime masking workflow: [maritime_input/longer_mask_clip/scene_input_003s_033s.mp4](maritime_input/longer_mask_clip/scene_input_003s_033s.mp4)
 
