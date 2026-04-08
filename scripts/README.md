@@ -2,6 +2,13 @@
 
 These scripts are experimental utilities built during exploratory prototyping. They are useful for understanding behavior and generating quick local results, but they are not a polished or fully validated pipeline.
 
+Upstream provenance for the two panoramic depth backends used here:
+
+- `DA360`: https://github.com/Insta360-Research-Team/DA360
+- `DAP`: https://github.com/Insta360-Research-Team/DAP
+
+In practice, this repo contains the DA360 codebase directly and expects DAP as a separate sibling checkout when you run the DAP-backed scripts.
+
 The main custom scripts added on top of upstream DA360 are:
 
 - `maritime_da360.py`: wraps DA360 for the downward-looking elliptical fisheye setup.

@@ -38,6 +38,16 @@ Pretrained models are available from the upstream project page and Google Drive 
 
 This workspace also contains a custom maritime adaptation for a downward-looking elliptical fisheye camera mounted above a boat.
 
+The exploratory maritime code in this repo is built around two upstream panoramic depth projects from Insta360 Research:
+
+- [DA360: Depth Anything in 360 degrees](https://github.com/Insta360-Research-Team/DA360) (this repo is based on that codebase)
+- [DAP: Depth Any Panoramas](https://github.com/Insta360-Research-Team/DAP) (used here as an optional alternative depth backend)
+
+Project pages:
+
+- [DA360 project page](https://insta360-research-team.github.io/DA360/)
+- [DAP project page](https://insta360-research-team.github.io/DAP_website/)
+
 <p align="center">
   <img src="assets/examples/boat_fisheye_circle_preview.jpg" width="48%" alt="Downward-looking fisheye frame with fitted ellipse and selected anchor point.">
   <img src="assets/examples/example_scene_pan_frame.jpg" width="48%" alt="Browser view of the split background and boat point cloud scene.">
@@ -76,6 +86,8 @@ Added locally on top of upstream DA360:
 - an alternative DAP depth backend
 - automatic boat and water mask benchmarking and SAM2-based propagation
 
+The DAP integration in this repo is intentionally lightweight: it reuses the same maritime preprocessing and aggregation experiments, but swaps the per-frame depth backend to the official DAP model.
+
 The custom entry points are documented in [scripts/README.md](scripts/README.md).
 
 That script guide also includes repo-relative commands for reproducing the two saved `VO + ICP` example scenes and reopening their `background_boat_view.html` viewers without any private absolute paths.
@@ -113,7 +125,12 @@ For publishing, the recommended path is:
 
 ## Acknowledgements
 
-This project is partially based on:
+This project builds directly on or experiments with the following upstream depth codebases:
+
+- [DA360](https://github.com/Insta360-Research-Team/DA360)
+- [DAP](https://github.com/Insta360-Research-Team/DAP)
+
+Additional upstream dependencies and inspirations include:
 
 - [Depth Anything V2](https://github.com/DepthAnything/Depth-Anything-V2)
 - [PanDA](https://github.com/caozidong/PanDA)
@@ -121,11 +138,24 @@ This project is partially based on:
 
 ## Citation
 
+If you use the `DA360`-based path in this repo, cite:
+
 ```bibtex
 @article{jiang2025depth,
   title={Depth Anything in $360^\\circ$: Towards Scale Invariance in the Wild},
   author={Jiang, Hualie and Song, Ziyang and Lou, Zhiqiang and Xu, Rui and Tan, Minglang},
   journal={arXiv preprint arXiv:2512.22819},
+  year={2025}
+}
+```
+
+If you use the `DAP`-based path in this repo, cite:
+
+```bibtex
+@article{lin2025dap,
+  title={Depth Any Panoramas: A Foundation Model for Panoramic Depth Estimation},
+  author={Lin, Xin and Song, Meixi and Zhang, Dizhe and Lu, Wenxuan and Li, Haodong and Du, Bo and Yang, Ming-Hsuan and Nguyen, Truong and Qi, Lu},
+  journal={arXiv},
   year={2025}
 }
 ```
